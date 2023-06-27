@@ -6,23 +6,21 @@
 #line 1 "c:/Users/benja/OneDrive/Desktop/visualStudioCode/summerIOT/Lab1/src/Lab1.ino"
 
 
-
 void setup();
 void loop();
-#line 4 "c:/Users/benja/OneDrive/Desktop/visualStudioCode/summerIOT/Lab1/src/Lab1.ino"
+#line 3 "c:/Users/benja/OneDrive/Desktop/visualStudioCode/summerIOT/Lab1/src/Lab1.ino"
 SYSTEM_MODE(MANUAL);
 SYSTEM_THREAD(ENABLED);
 
-// setup() runs once, when the device is first turned on.
-void setup() {
-  // Put initialization like pinMode and begin functions here.
 
+void setup()
+{
+  pinMode(D5, OUTPUT);
 }
 
-// loop() runs over and over again, as quickly as it can execute.
-void loop() {
-  // The core of your code will likely live here.
-  pinMode(D5,OUTPUT);
+
+void loop()
+{
   delay(1000);
   digitalWrite(D5, HIGH);
   delay(1000);
